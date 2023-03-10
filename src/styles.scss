@@ -1,0 +1,243 @@
+@use 'sass:map';
+
+@import '~bootstrap/scss/bootstrap.scss';
+body {
+  padding: 10px;
+}
+
+
+.mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+    caret-color: #f44336 !important;
+  }
+  
+  .mat-error {
+    color: #f44336 !important;
+  }
+
+  $success:       #006EC7 !default;//#35A255 !default;
+$primary:       #007CBB !default;
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem) !important;
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+
+.mat-step-header {
+  background-color: transparent !important;
+}
+
+.mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: transparent !important;
+  color: $success;
+  +.mat-step-label{
+    color: $success !important;
+    overflow-x: visible !important;
+  }
+}
+
+.mat-step-header .mat-step-icon-selected{
+  // background-color: $primary;
+  background-color: transparent !important;
+  color: $primary;
+  +.mat-step-label{
+    color: $primary !important;
+    overflow-x: visible !important;
+  }
+}
+
+.mat-step-header .mat-step-label{
+  color: rgba(0, 0, 0, .54);
+  overflow-x: visible !important;
+}
+.mat-step-header .mat-step-icon {
+  color: rgba(0, 0, 0, .54);
+  background-color: transparent;
+}
+
+.mat-step-text-label {
+  color: #444444 !important;
+  font: 12px 'Open Sans', Arial, Arimo, Helvetica, sans-serif  !important;
+  margin: 0 auto  !important;
+  position: relative  !important;
+}
+
+.mat-step-text-label {
+  overflow-x: visible !important;
+}
+
+.report_form_title-level1 {
+  font: 700 16px / 32px "Arimo", sans-serif !important;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  //color: rgba(0, 0, 0, 0.87);
+  color: #222;
+}
+
+.report_form_title-level2 {
+  font: 600 16px / 32px "Arimo", sans-serif !important;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  //color: rgba(0, 0, 0, 0.87);
+  color: #222;
+}
+
+.report_form_title-level3 {
+  font: 500 16px / 32px "Arimo", sans-serif !important;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  //color: rgba(0, 0, 0, 0.87);
+  color: #222;
+}
+
+.report_form_title-level4 {
+  font: 400 16px / 32px "Arimo", sans-serif !important;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  //color: rgba(0, 0, 0, 0.87);
+  color: #222;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+  }
+
+  .was-validated .form-control:invalid, .form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem) !important;
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  }
+
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+  }
+
+/* Start Assets stylesheet */
+.assets.ok {
+  //color: #4D4C45;
+  font-weight: bold;
+  // background-color: #00FF00;
+  background-color: transparent;
+}
+.assets.nok {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FF0000;
+  background-color: transparent;
+}
+.assets.ja {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #00FF00;
+  background-color: transparent;
+}
+.assets.nee {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FF0000;
+  background-color: transparent;
+}
+.assets.een {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #00FF00;
+  background-color: transparent;
+}
+.assets.twee {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FFFC00;
+  background-color: transparent;
+}
+.assets.drie {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FFFC00;
+  background-color: transparent;
+}
+.assets.vier {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FF0000;
+  background-color: transparent;
+}
+.assets.vijf {
+  // color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FF0000;
+  background-color: transparent;
+}
+
+.assets.goed
+, .assets.juist {
+  // color: #FFFFFF !important;
+  font-weight: normal !important;
+  // background-color: #339900 !important;
+  background-color: transparent;
+  // text-shadow: 1px 1px #4D4C45 !important;
+}
+.assets.redelijk {
+  // color: #FFFFFF !important;
+  font-weight: normal !important;
+  // background-color: #FFBF00 !important;
+  background-color: transparent;
+  // text-shadow: 1px 1px #4D4C45 !important;
+}
+.assets.slecht
+, .assets.onjuist {
+  //color: #FFFFFF !important;
+  font-weight: normal !important;
+  // background-color: #FF4000 !important;
+  background-color: transparent;
+  // text-shadow: 1px 1px #4D4C45 !important;
+}
+.assets.aangepast
+, .assets.vervangen {
+  //color: #4D4C45;
+  font-weight: bold;
+  // background-color: #FFFC00;
+  background-color: transparent;
+}
+.assets.ja
+, .assets.nee {
+  font-weight: normal !important;
+}
+.assets.nvt {
+  font-style: italic !important;
+}
+/* End Assets stylesheet */
+
+
+  
+
+/**  Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license */
